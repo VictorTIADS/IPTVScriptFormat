@@ -1,5 +1,16 @@
 fun main() {
-    var bruto = ""
+    var bruto = "#EXTINF:0 tvg-logo=\"https://i.imgur.com/R8qQGoZ.png\" group-title=\"FONTE 1\", TV Liberdade - WebTV\n" +
+            "http://01.paineldevideo.com/rtguarany/rtguarany/playlist.m3u8\n" +
+            "#EXTINF:0 tvg-logo=\"https://i.imgur.com/R8qQGoZ.png\" group-title=\"FONTE 1\", TV Liberdade - WebTV\n" +
+            "http://01.paineldevideo.com/rtguarany/rtguarany/playlist.m3u8\n" +
+            "#EXTINF:0 tvg-logo=\"https://i.imgur.com/R8qQGoZ.png\" group-title=\"FONTE 1\", IURD TV\n" +
+            "https://14398c.ha.azioncdn.net/primary/smil:tv_universal.smil/playlist.m3u8\n" +
+            "#EXTINF:0 tvg-logo=\"https://i.imgur.com/R8qQGoZ.png\" group-title=\"FONTE 1\", IURD TV\n" +
+            "https://14398c.ha.azioncdn.net/primary/smil:tv_universal.smil/playlist.m3u8\n" +
+            "#EXTINF:0 tvg-logo=\"https://i.imgur.com/R8qQGoZ.png\" group-title=\"FONTE 1\", IURD TV\n" +
+            "https://14398c.ha.azioncdn.net/primary/smil:tv_universal.smil/playlist.m3u8\n" +
+            "#EXTINF:0 tvg-logo=\"https://i.imgur.com/R8qQGoZ.png\" group-title=\"FONTE 1\", IURD TV\n" +
+            "https://14398c.ha.azioncdn.net/primary/smil:tv_universal.smil/playlist.m3u8"
 
     bruto = bruto.replace("#EXTINF:-1 ","#")
     bruto = bruto.replace("tvg-id=","")
@@ -22,6 +33,9 @@ fun main() {
         var logo = ok[2]
         var category = ok[3].replace("Series","Séries").replace("Musicas","Músicas").replace("Documentarios","Documentários")
         var url = ok[5]
+
+
+
 
 
         if (name.contains("FULL HD")){
